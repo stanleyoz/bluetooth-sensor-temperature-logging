@@ -1,0 +1,159 @@
+2025-01-02 16:45:40,289 - GoveeSensor - INFO - Started scanning for device: A4:C1:38:9F:66:65
+2025-01-02 16:47:26,151 - GoveeSensor - INFO - Started scanning for device: A4:C1:38:9F:66:65
+2025-01-02 16:48:27,599 - GoveeSensor - INFO - Started scanning for device: A4:C1:38:9F:66:65
+2025-01-02 16:51:06,818 - GoveeSensor - INFO - Starting BLE scan
+2025-01-02 16:51:06,877 - GoveeSensor - ERROR - Scan error: No powered Bluetooth adapters found.
+2025-01-02 16:51:08,352 - GoveeSensor - INFO - Starting BLE scan
+2025-01-02 16:51:08,412 - GoveeSensor - ERROR - Scan error: No powered Bluetooth adapters found.
+2025-01-02 16:51:09,778 - GoveeSensor - INFO - Starting BLE scan
+2025-01-02 16:51:09,837 - GoveeSensor - ERROR - Scan error: No powered Bluetooth adapters found.
+2025-01-02 16:51:10,762 - GoveeSensor - INFO - Starting BLE scan
+2025-01-02 16:51:10,821 - GoveeSensor - ERROR - Scan error: No powered Bluetooth adapters found.
+2025-01-02 16:51:11,781 - GoveeSensor - INFO - Starting BLE scan
+2025-01-02 16:51:11,841 - GoveeSensor - ERROR - Scan error: No powered Bluetooth adapters found.
+2025-01-02 16:51:12,713 - GoveeSensor - INFO - Starting BLE scan
+2025-01-02 16:51:12,772 - GoveeSensor - ERROR - Scan error: No powered Bluetooth adapters found.
+2025-01-02 16:51:13,631 - GoveeSensor - INFO - Starting BLE scan
+2025-01-02 16:51:13,690 - GoveeSensor - ERROR - Scan error: No powered Bluetooth adapters found.
+2025-01-02 16:51:14,589 - GoveeSensor - INFO - Starting BLE scan
+2025-01-02 16:51:14,650 - GoveeSensor - ERROR - Scan error: No powered Bluetooth adapters found.
+2025-01-02 16:51:15,867 - GoveeSensor - INFO - Starting BLE scan
+2025-01-02 16:51:15,927 - GoveeSensor - ERROR - Scan error: No powered Bluetooth adapters found.
+2025-01-02 16:51:16,938 - GoveeSensor - INFO - Starting BLE scan
+2025-01-02 16:51:16,997 - GoveeSensor - ERROR - Scan error: No powered Bluetooth adapters found.
+2025-01-02 16:52:07,620 - GoveeSensor - INFO - Starting BLE scan
+2025-01-02 16:52:17,862 - GoveeSensor - INFO - Found device: Govee_H5074_BE50 (A4:C1:38:63:BE:50)
+2025-01-02 16:52:21,663 - GoveeSensor - INFO - Starting BLE scan
+2025-01-02 16:52:31,912 - GoveeSensor - INFO - Found device: Govee_H5074_BE50 (A4:C1:38:63:BE:50)
+2025-01-02 16:52:31,913 - GoveeSensor - INFO - Found device: Govee_H5074_6665 (A4:C1:38:9F:66:65)
+2025-01-02 16:52:44,603 - GoveeSensor - INFO - Started scanning for device: A4:C1:38:9F:66:65
+2025-01-02 16:54:54,057 - GoveeSensor - DEBUG - Raw advertisement data: AdvertisementData(local_name='Govee_H5074_6665', manufacturer_data={60552: b'\x00\x12\x0c\x87\x0eE\x02', 76: b'\x02\x15INTELLI_ROCKS_HWPu\xf2\xff\xc2'}, service_uuids=['00001800-0000-1000-8000-00805f9b34fb', '00001801-0000-1000-8000-00805f9b34fb', '0000180a-0000-1000-8000-00805f9b34fb', '00010203-0405-0607-0809-0a0b0c0d1912', '494e5445-4c4c-495f-524f-434b535f4857'], rssi=-27)
+2025-01-02 16:54:54,057 - GoveeSensor - DEBUG - Raw manufacturer data: 00120c870e4502
+2025-01-02 16:54:54,058 - GoveeSensor - DEBUG - Decoded data: {'temperature': 30.9, 'humidity': 37.19, 'battery': 69, 'timestamp': '2025-01-02 16:54:54', 'raw_hex': '00120c870e4502'}
+2025-01-02 16:54:54,058 - GoveeSensor - INFO - Data logged: Temp=30.9°C, Humidity=37.19%, Battery=69%
+2025-01-02 16:54:58,077 - GoveeSensor - DEBUG - Raw advertisement data: AdvertisementData(local_name='Govee_H5074_6665', manufacturer_data={60552: b'\x00\x12\x0c\x87\x0eE\x02', 76: b'\x02\x15INTELLI_ROCKS_HWPu\xf2\xff\xc2'}, service_uuids=['00001800-0000-1000-8000-00805f9b34fb', '00001801-0000-1000-8000-00805f9b34fb', '0000180a-0000-1000-8000-00805f9b34fb', '00010203-0405-0607-0809-0a0b0c0d1912', '494e5445-4c4c-495f-524f-434b535f4857'], rssi=-30)
+2025-01-02 16:54:58,077 - GoveeSensor - DEBUG - Raw manufacturer data: 00120c870e4502
+2025-01-02 16:54:58,078 - GoveeSensor - DEBUG - Decoded data: {'temperature': 30.9, 'humidity': 37.19, 'battery': 69, 'timestamp': '2025-01-02 16:54:58', 'raw_hex': '00120c870e4502'}
+2025-01-02 16:54:58,078 - GoveeSensor - INFO - Data logged: Temp=30.9°C, Humidity=37.19%, Battery=69%
+2025-01-02 16:55:00,096 - GoveeSensor - DEBUG - Raw advertisement data: AdvertisementData(local_name='Govee_H5074_6665', manufacturer_data={60552: b'\x00\x11\x0c\xa4\x0eE\x02', 76: b'\x02\x15INTELLI_ROCKS_HWPu\xf2\xff\xc2'}, service_uuids=['00001800-0000-1000-8000-00805f9b34fb', '00001801-0000-1000-8000-00805f9b34fb', '0000180a-0000-1000-8000-00805f9b34fb', '00010203-0405-0607-0809-0a0b0c0d1912', '494e5445-4c4c-495f-524f-434b535f4857'], rssi=-28)
+2025-01-02 16:55:00,097 - GoveeSensor - DEBUG - Raw manufacturer data: 00110ca40e4502
+2025-01-02 16:55:00,097 - GoveeSensor - DEBUG - Decoded data: {'temperature': 30.89, 'humidity': 37.48, 'battery': 69, 'timestamp': '2025-01-02 16:55:00', 'raw_hex': '00110ca40e4502'}
+2025-01-02 16:55:00,098 - GoveeSensor - INFO - Data logged: Temp=30.89°C, Humidity=37.48%, Battery=69%
+2025-01-02 16:57:37,950 - GoveeSensor - INFO - Started monitoring device: A4:C1:38:9F:66:65
+2025-01-02 16:57:38,899 - GoveeSensor - INFO - Data logged: Temp=30.62°C, Humidity=37.01%
+2025-01-02 16:57:42,922 - GoveeSensor - INFO - Data logged: Temp=30.61°C, Humidity=38.01%
+2025-01-02 16:57:44,961 - GoveeSensor - INFO - Data logged: Temp=30.61°C, Humidity=38.01%
+2025-01-02 16:57:46,942 - GoveeSensor - INFO - Data logged: Temp=30.61°C, Humidity=38.01%
+2025-01-02 16:57:48,961 - GoveeSensor - INFO - Data logged: Temp=30.43°C, Humidity=38.74%
+2025-01-02 16:57:50,962 - GoveeSensor - INFO - Data logged: Temp=30.43°C, Humidity=38.74%
+2025-01-02 16:57:53,002 - GoveeSensor - INFO - Data logged: Temp=30.43°C, Humidity=38.74%
+2025-01-02 16:57:54,987 - GoveeSensor - INFO - Data logged: Temp=30.43°C, Humidity=38.74%
+2025-01-02 16:57:59,008 - GoveeSensor - INFO - Data logged: Temp=30.41°C, Humidity=37.99%
+2025-01-02 16:58:01,028 - GoveeSensor - INFO - Data logged: Temp=30.41°C, Humidity=37.99%
+2025-01-02 16:58:05,050 - GoveeSensor - INFO - Data logged: Temp=30.38°C, Humidity=37.4%
+2025-01-02 16:58:07,049 - GoveeSensor - INFO - Data logged: Temp=30.38°C, Humidity=37.4%
+2025-01-02 16:58:09,069 - GoveeSensor - INFO - Data logged: Temp=30.38°C, Humidity=37.4%
+2025-01-02 16:58:11,070 - GoveeSensor - INFO - Data logged: Temp=30.38°C, Humidity=37.4%
+2025-01-02 16:58:13,090 - GoveeSensor - INFO - Data logged: Temp=30.38°C, Humidity=37.32%
+2025-01-02 16:58:15,092 - GoveeSensor - INFO - Data logged: Temp=30.38°C, Humidity=37.32%
+2025-01-02 16:58:17,112 - GoveeSensor - INFO - Data logged: Temp=30.38°C, Humidity=37.32%
+2025-01-02 16:58:19,111 - GoveeSensor - INFO - Data logged: Temp=30.38°C, Humidity=37.32%
+2025-01-02 16:58:21,132 - GoveeSensor - INFO - Data logged: Temp=30.35°C, Humidity=37.62%
+2025-01-02 16:58:23,132 - GoveeSensor - INFO - Data logged: Temp=30.35°C, Humidity=37.62%
+2025-01-02 16:58:27,157 - GoveeSensor - INFO - Data logged: Temp=30.35°C, Humidity=37.62%
+2025-01-02 16:58:29,178 - GoveeSensor - INFO - Data logged: Temp=30.33°C, Humidity=37.73%
+2025-01-02 16:58:31,181 - GoveeSensor - INFO - Data logged: Temp=30.33°C, Humidity=37.73%
+2025-01-02 16:58:33,196 - GoveeSensor - INFO - Data logged: Temp=30.33°C, Humidity=37.73%
+2025-01-02 16:58:35,199 - GoveeSensor - INFO - Data logged: Temp=30.33°C, Humidity=37.73%
+2025-01-02 16:58:37,220 - GoveeSensor - INFO - Data logged: Temp=30.32°C, Humidity=37.65%
+2025-01-02 16:58:39,221 - GoveeSensor - INFO - Data logged: Temp=30.32°C, Humidity=37.65%
+2025-01-02 16:58:51,288 - GoveeSensor - INFO - Data logged: Temp=30.32°C, Humidity=37.65%
+2025-01-02 16:58:53,304 - GoveeSensor - INFO - Data logged: Temp=31.85°C, Humidity=90.3%
+2025-01-02 16:58:55,307 - GoveeSensor - INFO - Data logged: Temp=31.85°C, Humidity=90.3%
+2025-01-02 16:58:57,329 - GoveeSensor - INFO - Data logged: Temp=31.85°C, Humidity=90.3%
+2025-01-02 16:58:59,329 - GoveeSensor - INFO - Data logged: Temp=31.85°C, Humidity=90.3%
+2025-01-02 16:59:03,349 - GoveeSensor - INFO - Data logged: Temp=31.12°C, Humidity=82.97%
+2025-01-02 16:59:05,370 - GoveeSensor - INFO - Data logged: Temp=31.12°C, Humidity=82.97%
+2025-01-02 16:59:11,388 - GoveeSensor - INFO - Data logged: Temp=30.92°C, Humidity=61.93%
+2025-01-02 16:59:13,410 - GoveeSensor - INFO - Data logged: Temp=30.92°C, Humidity=61.93%
+2025-01-02 16:59:15,412 - GoveeSensor - INFO - Data logged: Temp=30.92°C, Humidity=61.93%
+2025-01-02 16:59:21,447 - GoveeSensor - INFO - Data logged: Temp=30.92°C, Humidity=61.93%
+2025-01-02 16:59:25,491 - GoveeSensor - INFO - Data logged: Temp=30.92°C, Humidity=61.93%
+2025-01-02 16:59:27,468 - GoveeSensor - INFO - Data logged: Temp=30.92°C, Humidity=42.83%
+2025-01-02 16:59:29,491 - GoveeSensor - INFO - Data logged: Temp=30.92°C, Humidity=42.83%
+2025-01-02 16:59:40,626 - GoveeSensor - INFO - Started monitoring device: A4:C1:38:9F:66:65
+2025-01-02 16:59:41,550 - GoveeSensor - INFO - Data logged: Temp=30.68°C, Humidity=41.24%
+2025-01-02 16:59:43,552 - GoveeSensor - INFO - Data logged: Temp=30.68°C, Humidity=41.24%
+2025-01-02 16:59:47,571 - GoveeSensor - INFO - Data logged: Temp=30.68°C, Humidity=41.24%
+2025-01-02 16:59:51,590 - GoveeSensor - INFO - Data logged: Temp=30.62°C, Humidity=41.22%
+2025-01-02 16:59:53,610 - GoveeSensor - INFO - Data logged: Temp=30.62°C, Humidity=41.22%
+2025-01-02 16:59:55,610 - GoveeSensor - INFO - Data logged: Temp=30.62°C, Humidity=41.22%
+2025-01-02 16:59:57,633 - GoveeSensor - INFO - Data logged: Temp=30.57°C, Humidity=39.95%
+2025-01-02 16:59:59,627 - GoveeSensor - INFO - Data logged: Temp=30.57°C, Humidity=39.95%
+2025-01-02 17:00:01,648 - GoveeSensor - INFO - Data logged: Temp=30.57°C, Humidity=39.95%
+2025-01-02 17:00:03,649 - GoveeSensor - INFO - Data logged: Temp=30.57°C, Humidity=39.95%
+2025-01-02 17:00:05,673 - GoveeSensor - INFO - Data logged: Temp=30.56°C, Humidity=39.56%
+2025-01-02 17:00:07,667 - GoveeSensor - INFO - Data logged: Temp=30.56°C, Humidity=39.56%
+2025-01-02 17:00:11,690 - GoveeSensor - INFO - Data logged: Temp=30.56°C, Humidity=39.56%
+2025-01-02 17:00:13,711 - GoveeSensor - INFO - Data logged: Temp=30.52°C, Humidity=39.65%
+2025-01-02 17:00:15,711 - GoveeSensor - INFO - Data logged: Temp=30.52°C, Humidity=39.65%
+2025-01-02 17:00:19,736 - GoveeSensor - INFO - Data logged: Temp=30.52°C, Humidity=39.65%
+2025-01-02 17:00:21,753 - GoveeSensor - INFO - Data logged: Temp=30.51°C, Humidity=38.96%
+2025-01-02 17:00:23,752 - GoveeSensor - INFO - Data logged: Temp=30.51°C, Humidity=38.96%
+2025-01-02 17:00:27,776 - GoveeSensor - INFO - Data logged: Temp=30.51°C, Humidity=38.96%
+2025-01-02 17:00:29,803 - GoveeSensor - INFO - Data logged: Temp=30.44°C, Humidity=38.79%
+2025-01-02 17:00:31,795 - GoveeSensor - INFO - Data logged: Temp=30.44°C, Humidity=38.79%
+2025-01-02 17:00:33,817 - GoveeSensor - INFO - Data logged: Temp=30.44°C, Humidity=38.79%
+2025-01-02 17:00:35,815 - GoveeSensor - INFO - Data logged: Temp=30.44°C, Humidity=38.79%
+2025-01-02 17:00:37,832 - GoveeSensor - INFO - Data logged: Temp=30.46°C, Humidity=38.59%
+2025-01-02 17:00:39,834 - GoveeSensor - INFO - Data logged: Temp=30.46°C, Humidity=38.59%
+2025-01-02 17:00:41,855 - GoveeSensor - INFO - Data logged: Temp=30.46°C, Humidity=38.59%
+2025-01-02 17:00:43,852 - GoveeSensor - INFO - Data logged: Temp=30.46°C, Humidity=38.59%
+2025-01-02 17:00:45,871 - GoveeSensor - INFO - Data logged: Temp=30.41°C, Humidity=38.51%
+2025-01-02 17:00:49,892 - GoveeSensor - INFO - Data logged: Temp=30.41°C, Humidity=38.51%
+2025-01-02 17:00:51,901 - GoveeSensor - INFO - Data logged: Temp=30.41°C, Humidity=38.51%
+2025-01-02 17:00:55,910 - GoveeSensor - INFO - Data logged: Temp=30.42°C, Humidity=38.35%
+2025-01-02 17:00:57,931 - GoveeSensor - INFO - Data logged: Temp=30.42°C, Humidity=38.35%
+2025-01-02 17:00:59,929 - GoveeSensor - INFO - Data logged: Temp=30.42°C, Humidity=38.35%
+2025-01-02 17:01:01,952 - GoveeSensor - INFO - Data logged: Temp=30.41°C, Humidity=38.27%
+2025-01-02 17:01:03,949 - GoveeSensor - INFO - Data logged: Temp=30.41°C, Humidity=38.27%
+2025-01-02 17:01:05,970 - GoveeSensor - INFO - Data logged: Temp=30.41°C, Humidity=38.27%
+2025-01-02 17:01:07,970 - GoveeSensor - INFO - Data logged: Temp=30.41°C, Humidity=38.27%
+2025-01-02 17:02:54,431 - GoveeSensor - INFO - Started monitoring device: A4:C1:38:9F:66:65
+2025-01-02 17:02:54,522 - GoveeSensor - INFO - Data logged: Temp=30.28°C, Humidity=39.21%
+2025-01-02 17:02:58,583 - GoveeSensor - INFO - Data logged: Temp=30.28°C, Humidity=39.21%
+2025-01-02 17:03:00,541 - GoveeSensor - INFO - Data logged: Temp=30.28°C, Humidity=39.21%
+2025-01-02 17:03:02,562 - GoveeSensor - INFO - Data logged: Temp=30.25°C, Humidity=38.97%
+2025-01-02 17:03:04,564 - GoveeSensor - INFO - Data logged: Temp=30.25°C, Humidity=38.97%
+2025-01-02 17:03:06,585 - GoveeSensor - INFO - Data logged: Temp=30.25°C, Humidity=38.97%
+2025-01-02 17:03:10,603 - GoveeSensor - INFO - Data logged: Temp=30.21°C, Humidity=39.11%
+2025-01-02 17:03:12,602 - GoveeSensor - INFO - Data logged: Temp=30.21°C, Humidity=39.11%
+2025-01-02 17:03:14,623 - GoveeSensor - INFO - Data logged: Temp=30.21°C, Humidity=39.11%
+2025-01-02 17:03:16,624 - GoveeSensor - INFO - Data logged: Temp=30.21°C, Humidity=39.11%
+2025-01-02 17:03:18,645 - GoveeSensor - INFO - Data logged: Temp=30.24°C, Humidity=38.51%
+2025-01-02 17:03:20,646 - GoveeSensor - INFO - Data logged: Temp=30.24°C, Humidity=38.51%
+2025-01-02 17:03:22,668 - GoveeSensor - INFO - Data logged: Temp=30.24°C, Humidity=38.51%
+2025-01-02 17:03:24,669 - GoveeSensor - INFO - Data logged: Temp=30.24°C, Humidity=38.51%
+2025-01-02 17:05:12,330 - GoveeSensor - INFO - Started monitoring device: A4:C1:38:9F:66:65
+2025-01-02 17:06:13,534 - GoveeSensor - INFO - Data logged: Temp=30.09°C, Humidity=39.24%
+2025-01-02 17:07:13,839 - GoveeSensor - INFO - Data logged: Temp=30.08°C, Humidity=38.98%
+2025-01-02 17:08:14,146 - GoveeSensor - INFO - Data logged: Temp=30.06°C, Humidity=38.59%
+2025-01-02 17:09:16,467 - GoveeSensor - INFO - Data logged: Temp=29.98°C, Humidity=38.51%
+2025-01-02 17:10:16,774 - GoveeSensor - INFO - Data logged: Temp=29.93°C, Humidity=38.5%
+2025-01-02 17:11:19,078 - GoveeSensor - INFO - Data logged: Temp=29.92°C, Humidity=38.54%
+2025-01-02 17:12:19,383 - GoveeSensor - INFO - Data logged: Temp=29.9°C, Humidity=39.82%
+2025-01-02 17:13:19,681 - GoveeSensor - INFO - Data logged: Temp=29.8°C, Humidity=39.25%
+2025-01-02 17:14:19,992 - GoveeSensor - INFO - Data logged: Temp=29.76°C, Humidity=38.84%
+2025-01-02 17:15:20,305 - GoveeSensor - INFO - Data logged: Temp=29.71°C, Humidity=39.06%
+2025-01-02 17:16:20,612 - GoveeSensor - INFO - Data logged: Temp=29.69°C, Humidity=39.07%
+2025-01-02 17:17:20,923 - GoveeSensor - INFO - Data logged: Temp=29.65°C, Humidity=38.65%
+2025-01-02 17:18:21,309 - GoveeSensor - INFO - Data logged: Temp=29.66°C, Humidity=39.03%
+2025-01-02 17:19:21,526 - GoveeSensor - INFO - Data logged: Temp=29.63°C, Humidity=39.16%
+2025-01-02 17:20:21,843 - GoveeSensor - INFO - Data logged: Temp=29.63°C, Humidity=38.9%
+2025-01-02 17:21:24,165 - GoveeSensor - INFO - Data logged: Temp=29.62°C, Humidity=39.09%
+2025-01-02 17:22:24,472 - GoveeSensor - INFO - Data logged: Temp=29.61°C, Humidity=39.24%
+2025-01-02 17:23:24,774 - GoveeSensor - INFO - Data logged: Temp=29.62°C, Humidity=39.42%
+2025-01-02 17:24:25,090 - GoveeSensor - INFO - Data logged: Temp=29.61°C, Humidity=39.73%
+2025-01-02 17:25:25,403 - GoveeSensor - INFO - Data logged: Temp=29.58°C, Humidity=38.85%
+2025-01-02 17:26:25,720 - GoveeSensor - INFO - Data logged: Temp=29.57°C, Humidity=38.8%
+2025-01-02 17:27:28,026 - GoveeSensor - INFO - Data logged: Temp=29.56°C, Humidity=38.85%

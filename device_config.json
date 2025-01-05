@@ -1,0 +1,29 @@
+{
+    "devices": [
+        {
+            "key": "H5074_office",
+            "description": "Govee BT temp and humdity sensor for office",
+            "mac_address": "A4:C1:38:9F:66:65",
+            "device_type": "Sensor",
+            "scan_filter": {
+                "name_pattern": "Govee_H5074"
+            },
+            "decoder": {
+                "type": "govee_h5074",
+                "manufacturer_id": 60552
+            },
+            "fields": {
+                "temperature": {
+                    "source_field": "temperature",
+                    "enabled": true,
+                    "description": "temperature measured"
+                },
+                "humidity": {
+                    "source_field": "humidity",
+                    "enabled": true,
+                    "description": "humidity measured"
+                }
+            }
+        }
+    ]
+}
