@@ -1,4 +1,4 @@
-# Bluetooth Governance System for Ubuntu 20.04 on NVIDIA Jetson
+# Bluetooth sensor setup for data collection and logging for Ubuntu 20.04 on NVIDIA Jetson
 
 This repository contains tools and scripts for managing Bluetooth connectivity on Ubuntu 20.04 systems running on NVIDIA Jetson platforms, specifically tested with Intel AX9560 WiFi/Bluetooth M.2 cards.
 
