@@ -1,115 +1,120 @@
-# Bluetooth sensor setup for data collection and logging for Ubuntu 20.04 on NVIDIA Jetson
+# Bluetooth Sensor Temperature Logging
 
-This repository contains tools and scripts for managing Bluetooth connectivity on Ubuntu 20.04 systems running on NVIDIA Jetson platforms, specifically tested with Intel AX9560 WiFi/Bluetooth M.2 cards.
+A Python-based solution for logging temperature and humidity data from Govee H5074 Bluetooth sensors. This project is designed to run on Debian 10 ARM platforms (tested on an Amplifed Engineering nodeG5 IMX8PLUS gateway).
 
-## System Requirements
+Device vendor : www.amplified.com.au
 
-- Ubuntu 20.04 LTS
-- NVIDIA Jetson platform
-- Intel AX9560 WiFi/Bluetooth M.2 card
-- Python 3.8+
-
-## Known Issues and Solutions
-
-### Multiple Bluetooth Instance Conflicts
-
-One common issue encountered is D-Bus conflicts when multiple Python scripts attempt to access the Bluetooth daemon simultaneously. This manifests as:
+## Prerequisites
 
 ```bash
-Job for bluetooth.service failed because the control process exited with error code.
+# System dependencies
+sudo apt-get update
+sudo apt-get install python3-pip bluetooth bluez libbluetooth-dev libglib2.0-dev
+
+# Python packages
+pip3 install bleak
 ```
 
-With the following specific error in logs:
-```
-D-Bus setup failed: Name already in use
-Unable to get on D-Bus
-```
+## Usage
 
-#### Resolution Steps
+The script provides several commands for device management and data logging:
 
-1. Kill existing Bluetooth processes:
+### 1. Scanning for Devices
+
+To scan for available Govee sensors:
+
 ```bash
-sudo pkill -9 bluetoothd
-sudo rm -f /var/run/bluetooth/bluetooth.pid
+python logger.py --scan --name-pattern "Govee_H5074"
 ```
 
-2. Restart the Bluetooth service:
+### 2. Device Configuration
+
+Configure a new device by scanning and selecting from available devices:
+
 ```bash
-sudo systemctl daemon-reload
-sudo systemctl restart bluetooth
+python logger.py --configure
 ```
 
-## Best Practices for Development
+Example output:
+```
+Found devices:
+1. Govee_H5074_6665 (MAC: A4:C1:38:9F:66:65, RSSI: -63)
 
-When working with this system, follow these guidelines:
-
-1. **Resource Cleanup**: Always implement proper cleanup of Bluetooth connections:
-```python
-try:
-    # Your Bluetooth code here
-finally:
-    # Cleanup code
-    bluetooth_connection.close()
+Select device number to configure: 1
+Device configured: Govee_H5074_6665
 ```
 
-2. **Connection Management**: Use context managers when possible:
-```python
-with BluetoothConnection() as bt:
-    # Your code here
-    pass
+This will create a device_config.json file with the device details:
+```json
+{
+    "devices": [
+        {
+            "key": "H5074_office",
+            "description": "Govee BT temp and humidity sensor for office",
+            "mac_address": "A4:C1:38:9F:66:65",
+            "device_type": "Sensor",
+            "scan_filter": {
+                "name_pattern": "Govee_H5074"
+            },
+            "decoder": {
+                "type": "govee_h5074",
+                "manufacturer_id": 60552
+            },
+            "fields": {
+                "temperature": {
+                    "source_field": "temperature",
+                    "enabled": true,
+                    "description": "temperature measured"
+                },
+                "humidity": {
+                    "source_field": "humidity",
+                    "enabled": true,
+                    "description": "humidity measured"
+                }
+            }
+        }
+    ]
+}
 ```
 
-3. **Error Handling**: Implement proper error handling for resource conflicts:
-```python
-try:
-    bluetooth_connection.connect()
-except DBusException as e:
-    if "Name already in use" in str(e):
-        # Handle resource conflict
-        pass
-```
+### 3. Continuous Monitoring
 
-## Configuration
+To start monitoring configured devices:
 
-The Bluetooth system configuration file is located at `/etc/bluetooth/main.conf`. Ensure it contains the following basic configuration:
-
-```ini
-[General]
-Name = Ubuntu-BT
-Class = 0x000100
-DiscoverableTimeout = 0
-PairableTimeout = 0
-Privacy = 0
-Always = true
-```
-
-## Troubleshooting
-
-Common troubleshooting commands:
-
-1. Check Bluetooth service status:
 ```bash
-systemctl status bluetooth.service
+python logger.py --monitor --interval 15
 ```
 
-2. View detailed logs:
-```bash
-journalctl -u bluetooth.service -n 50
+This will:
+- Read data from all configured devices every 15 seconds
+- Log temperature and humidity readings to a CSV file
+- Create a new log file each day (format: ble_data_YYYYMMDD.csv)
+
+## Command Line Options
+
+```
+usage: logger.py [-h] [--scan] [--name-pattern NAME_PATTERN] [--configure] [--monitor] [--interval INTERVAL]
+
+Generic BLE Device Logger
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --scan                Scan for available devices
+  --name-pattern NAME_PATTERN
+                        Filter devices by name pattern
+  --configure           Configure a new device
+  --monitor            Monitor configured devices
+  --interval INTERVAL   Reading interval in seconds
 ```
 
-3. Verify hardware detection:
-```bash
-lspci | grep -i bluetooth
-sudo dmesg | grep -i bluetooth
-```
+## Output Format
 
-4. Check if Bluetooth is blocked:
-```bash
-sudo rfkill list
-```
+The script generates daily CSV files with the following format:
+- Filename: ble_data_YYYYMMDD.csv
+- Fields: timestamp, device_key, temperature, humidity
 
-## Contributing
+## Notes
 
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
+- Requires sudo privileges or appropriate Bluetooth permissions
+- Designed for Govee H5074 sensors but can be extended for other BLE devices
+- Uses Bleak library for robust Bluetooth communication
